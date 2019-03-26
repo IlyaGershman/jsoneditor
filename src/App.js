@@ -11,7 +11,7 @@ const json = {};
 
 const modes = ['tree', 'form', 'view', 'code', 'text'];
 const _http = axios.create({
-  baseURL: `http:${window.location.hostname}:8008`
+  baseURL: `${window.location.protocol}//${window.location.hostname}:8008`
 });
 class App extends Component {
   constructor() {
